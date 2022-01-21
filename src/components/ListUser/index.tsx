@@ -40,20 +40,7 @@ export const ListUser = () => {
         .catch(err => console.log(err))
   }
   const sua = (item: any) => {
-    if (item && item.id)
-      fetch('https://5d36d86c86300e0014b647c7.mockapi.io/users/' + item?.id, {
-        method: 'PUT',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json'
-        }
-      })
-        .then(response => response.json())
-        .then(e => {
-          // if (e) setData(e)
-          setLoading(!loading)
-        })
-        .catch(err => console.log(err))
+
   }
   
   return (
@@ -90,4 +77,3 @@ export const ListUser = () => {
     </div>
   )
 }
-// const data = []
