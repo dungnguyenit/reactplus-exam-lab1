@@ -36,7 +36,7 @@ function App () {
         footer={null}
         onCancel={handleCancel}
       >
-        <AddUserForm onCancel={handleCancel}/>
+        <AddUserForm onCancel={handleCancel}  />
       </Modal>
     </div>
   )
