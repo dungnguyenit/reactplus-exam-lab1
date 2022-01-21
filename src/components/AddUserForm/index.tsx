@@ -1,6 +1,9 @@
 import React from "react";
-
-export const AddUserForm = () => {
+interface Props  {
+    onCancel?: () => void,
+    onOk?:()=>void
+}
+export const AddUserForm:React.FC<Props> = ({onCancel,onOk}) => {
     return <div>
         <div className="field-input-group">
             <input placeholder="Avatar" type="text" className="ant-input" />
@@ -15,7 +18,7 @@ export const AddUserForm = () => {
             <button className="ant-btn ant-btn-primary">
                 Save
             </button>
-            <button className="ant-btn" style={{marginLeft: 10}}>
+            <button className="ant-btn" style={{marginLeft: 10}}  onClick={onCancel}>
                 Cancel
             </button>
         </div>

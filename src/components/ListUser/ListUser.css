@@ -1,0 +1,12 @@
+.ant-list-item{
+    flex-direction: column;
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+.ant-list-item-meta{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.ant-list-item-meta-title{
+    width: 50;
+}
